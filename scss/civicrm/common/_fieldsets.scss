@@ -1,0 +1,7 @@
+fieldset {
+  legend {
+    @include section-title;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
