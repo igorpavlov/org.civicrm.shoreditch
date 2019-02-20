@@ -110,13 +110,13 @@
 
     .crm-expand-row {
       background: none;
+      line-height: 1em;
       position: relative;
 
       &::after {
         @include fa-icon($font-size-base, $fa-var-chevron-right);
         left: 0;
         position: absolute;
-        top: 2px;
       }
 
       &.expanded {
