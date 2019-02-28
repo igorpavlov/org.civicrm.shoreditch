@@ -125,12 +125,15 @@
 #civirule_helptext_dialog-block + .crm-form-block {
   @include block-form();
 
+
+
   padding-bottom: 0 !important;
   padding-top: 0 !important;
 
   + fieldset {
     table.selector {
       @include table-selector();
+      border: solid 1px #d3dee2;
     }
 
     // This div is empty on the screen, it contains a <ul> which does not have
