@@ -242,6 +242,34 @@
   }
 }
 
+.dataTables_wrapper {
+  box-shadow: none;
+}
+
+h3 + .crm-form-block {
+  box-shadow: none !important;
+  border: solid 1px #d3dee2;
+  border-top: none;
+}
+
+.crm-container h3:not(.widget-header) {
+  box-shadow: none !important;
+  border: solid 1px #d3dee2;
+}
+
+h3 + .dataTables_wrapper, h3 + div + .dataTables_wrapper {
+  box-shadow: none !important;
+  border: solid 1px #d3dee2;
+  border-top: none;
+}
+
+h3 + .description {
+  box-shadow: none !important;
+  border: solid 1px #d3dee2;
+  border-top: none;
+  border-bottom: none;
+}
+
 .page-civicrm {
   #branding {
     padding: 20px 0 0 !important;
