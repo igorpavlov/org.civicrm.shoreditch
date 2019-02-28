@@ -13,7 +13,6 @@
 @mixin table-selector() {
   background-color: $crm-white;
   box-shadow: none;
-  border: solid 1px #d3dee2;
 
   thead th {
     background-color: $crm-white !important;
