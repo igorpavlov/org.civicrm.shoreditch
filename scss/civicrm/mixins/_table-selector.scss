@@ -13,9 +13,11 @@
 @mixin table-selector() {
   background-color: $crm-white;
   box-shadow: none;
+  border: solid 1px #d3dee2;
 
   thead th {
-    background-color: $gray-light !important;
+    background-color: $crm-white !important;
+    border-bottom: solid 1px $gray-light !important;
   }
 
   tbody tr:not(:last-of-type) {
