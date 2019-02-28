@@ -169,11 +169,20 @@
         padding: 0;
 
         legend {
+          @include section-title;
           margin-bottom: 0;
           padding: 10px 20px;
         }
 
         .crm-membership-form-block-billing {
+          td {
+            padding: 0;
+          }
+
+          .billing_mode-section {
+            margin-top: 20px;
+          }
+
           #payment_information .check_number-section {
             .label {
               padding: 0 5px 0 15px;
