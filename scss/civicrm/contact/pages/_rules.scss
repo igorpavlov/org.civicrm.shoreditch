@@ -91,6 +91,27 @@
       @include block-form();
     }
   }
+
+  .dataTables_wrapper {
+    box-shadow: none !important;
+  }
+
+  h3 {
+    + .crm-form-block,
+    + .dataTables_wrapper,
+    + div + .dataTables_wrapper {
+      border-top: 0;
+    }
+
+    + .crm-form-block,
+    .crm-container h3:not(.widget-header),
+    + .dataTables_wrapper,
+    + div + .dataTables_wrapper,
+    &:not(.widget-header) {
+      border: solid 1px $crm-grayblue-dark;
+      box-shadow: none !important;
+    }
+  }
 }
 
 // "Find CiviRules Rules" page
