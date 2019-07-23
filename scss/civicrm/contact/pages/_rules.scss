@@ -105,6 +105,8 @@
   + fieldset {
     table.selector {
       @include table-selector();
+
+      border: solid 1px $crm-grayblue-dark;
     }
 
     // This div is empty on the screen, it contains a <ul> which does not have
