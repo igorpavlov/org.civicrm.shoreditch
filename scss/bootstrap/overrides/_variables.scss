@@ -11,6 +11,8 @@ $crm-form-control-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
 $crm-box-shadow-inset: inset 0 10px 8px -10px rgba(0, 0, 0, 0.15), inset 0 -11px 8px -9px rgba(0, 0, 0, 0.15);
 $crm-select2-box-shadow-inset: inset 0 0 9px -5px rgb(51, 51, 51);
 
+$grid-gap: 20px;
+
 //== CiviCRM Page
 //
 //##
@@ -148,7 +150,7 @@ $border-radius-child:         4px !default;
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          10px 20px !default;
+$table-cell-padding:          #{$grid-gap / 2} #{$grid-gap} !default;
 $table-bg:                    $crm-white !default;
 $table-border-color:          $gray-light !default;
 
@@ -205,11 +207,11 @@ $label-default-bg:           $crm-grayblue-darker;
 //
 //##
 
-$modal-inner-padding:         20px 30px !default;
-$modal-title-padding:         10px 29px !default;
-$crm-modal-footer-padding:    20px !default;
-$crm-modal-sm-title-padding:  10px 20px !default;
-$crm-modal-sm-footer-padding: 10px !default;
+$modal-inner-padding:         #{$grid-gap} #{$grid-gap / 2 * 3} !default;
+$modal-title-padding:         #{$grid-gap / 2} #{$grid-gap / 2 * 3 - 1px} !default;
+$crm-modal-footer-padding:    $grid-gap !default;
+$crm-modal-sm-title-padding:  #{$grid-gap / 2} #{$grid-gap} !default;
+$crm-modal-sm-footer-padding: $grid-gap / 2 !default;
 
 $modal-footer-border-color:   $gray-light !default;
 
@@ -221,29 +223,29 @@ $modal-sm:                    360px !default;
 //
 //##
 
-$ui-modal-header-padding: 13px 20px !default;
+$ui-modal-header-padding: 13px #{$grid-gap} !default;
 
 //== Panels
 //
 //##
 
 $panel-bg:                  transparent !default;
-$panel-body-padding:        15px 20px !default;
+$panel-body-padding:        #{$grid-gap / 4 * 3} #{$grid-gap} !default;
 $panel-heading-padding:     $panel-body-padding !default;
-$panel-footer-padding:      20px !default;
+$panel-footer-padding:      $grid-gap !default;
 $panel-border-radius:       $border-radius-base + 1 !default;
 
 $panel-inner-border:        $gray-light !default;
 $panel-footer-bg:           $crm-white !default;
 
-$crm-panel-heading-margin:  10px !default;
+$crm-panel-heading-margin:  $grid-gap / 2 !default;
 
 //== Subheading
 $crm-panel-subheading-padding: $panel-heading-padding !default;
 
 //== Abstract and collapsible extra
-$crm-panel-abstract-padding: 8px 20px !default;
-$crm-panel-extra-padding:    5px 20px 10px 35px !default;
+$crm-panel-abstract-padding: 8px #{$grid-gap} !default;
+$crm-panel-extra-padding:    #{$grid-gap / 4} #{$grid-gap} #{$grid-gap / 2} #{$grid-gap / 4 * 7} !default;
 
 //== Contextual variations
 $panel-default-text:        $gray-darker !default;
@@ -262,7 +264,7 @@ $panel-danger-text:         $crm-white !default;
 $panel-danger-heading-bg:   $brand-danger !default;
 
 //== Nested panel
-$crm-panel-nested-indent: 20px;
+$crm-panel-nested-indent: $grid-gap;
 
 //== Status strip
 $crm-panel-status-strip-width: 6px !default;
@@ -280,7 +282,7 @@ $grid-gutter-width: 16px !default;
 //##
 
 //=== Shared nav styles
-$nav-link-padding:                        10px 20px !default;
+$nav-link-padding:                        #{$grid-gap / 2} #{$grid-gap} !default;
 
 $nav-disabled-link-color:                 lighten(desaturate(adjust-hue($gray-darker, -13.6364), 1.1598), 46.4706) !default;
 $nav-disabled-link-hover-color:           $nav-disabled-link-color !default;
@@ -293,12 +295,12 @@ $nav-tabs-active-link-hover-border-color: $nav-tabs-border-color !default;
 $crm-nav-tab-content-padding:             $panel-body-padding !default;
 
 $crm-nav-stacked-bg:                      $crm-white;
-$crm-nav-stacked-link-padding:            15px 20px !default;
+$crm-nav-stacked-link-padding:            #{$grid-gap / 4 * 3} #{$grid-gap} !default;
 $crm-nav-stacked-border-radius:           0 !default;
 
 //== Nav tabs placed in a panel heading
 $crm-nav-tabs-panel-heading-border:                  0 !default;
-$crm-nav-tabs-panel-heading-margin:                  -10px 0 !default;
+$crm-nav-tabs-panel-heading-margin:                  -#{$grid-gap / 2} 0 !default;
 $crm-nav-tabs-panel-heading-link-background:         transparent !default;
 $crm-nav-tabs-panel-heading-link-border-width:       0 !default;
 $crm-nav-tabs-panel-heading-link-border-hover-width: 0 0 3px 0 !default;
