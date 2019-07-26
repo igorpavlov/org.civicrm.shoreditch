@@ -172,6 +172,12 @@ table {
     @extend %civihr-table;
   }
 
+  table,
+  table.form-layout-compressed {
+    margin-bottom: $grid-gap;
+    width: 100%;
+  }
+
   &.ui-dialog {
     table {
       box-shadow: none !important;

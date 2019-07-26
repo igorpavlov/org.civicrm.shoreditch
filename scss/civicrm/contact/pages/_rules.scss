@@ -91,6 +91,27 @@
       @include block-form();
     }
   }
+
+  .dataTables_wrapper {
+    box-shadow: none !important;
+  }
+
+  h3 {
+    + .crm-form-block,
+    + .dataTables_wrapper,
+    + div + .dataTables_wrapper {
+      border-top: 0;
+    }
+
+    + .crm-form-block,
+    .crm-container h3:not(.widget-header),
+    + .dataTables_wrapper,
+    + div + .dataTables_wrapper,
+    &:not(.widget-header) {
+      border: solid 1px $crm-grayblue-dark;
+      box-shadow: none !important;
+    }
+  }
 }
 
 // "Find CiviRules Rules" page
@@ -105,6 +126,8 @@
   + fieldset {
     table.selector {
       @include table-selector();
+
+      border: solid 1px $crm-grayblue-dark;
     }
 
     // This div is empty on the screen, it contains a <ul> which does not have
@@ -118,4 +141,10 @@
 // Help icon in "Description" column on "Find CiviRules Rules" results page
 #civirule_help_text_icon {
   margin-left: $crm-standard-gap / 4;
+}
+
+.ui-dialog-content .CRM_Civirules_Form_Rule {
+  .crm-form-block {
+    @include block-form();
+  }
 }

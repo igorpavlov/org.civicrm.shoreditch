@@ -1,0 +1,12 @@
+/* stylelint-disable max-nesting-depth, selector-max-compound-selectors, selector-no-qualifying-type, selector-max-id */
+
+#{civi-page('group')} {
+  .CRM_Contact_Form_GroupContact .description {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #GroupSubscriptionListTable_wrapper {
+    box-shadow: none;
+  }
+}
