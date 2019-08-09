@@ -1,0 +1,7 @@
+/* stylelint-disable max-nesting-depth, selector-max-compound-selectors, selector-no-qualifying-type, selector-max-id, scss/at-extend-no-missing-placeholder, property-no-vendor-prefix */
+
+&#{civi-page('admin-messagetemplates')} {
+  .help + div > .dataTables_wrapper {
+    margin-top: $crm-standard-gap !important;
+  }
+}
